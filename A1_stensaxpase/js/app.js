@@ -2,7 +2,7 @@
 let playerScore = 0;
 let aiScore = 0;
 
-// Function
+// Function to play the game
 function playGame(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
   const aiChoice = choices[Math.floor(Math.random() * 3)];
@@ -11,7 +11,7 @@ function playGame(playerChoice) {
   document.getElementById('playerRollText').innerText = `Player Choice: ${playerChoice}`;
   document.getElementById('aiRollText').innerText = `AI Choice: ${aiChoice}`;
 
-  // Result
+  // Determine the result
   let result = '';
   if (playerChoice === aiChoice) {
     result = 'Draw';
